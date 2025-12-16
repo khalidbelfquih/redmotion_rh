@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS articles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    designation VARCHAR(200) NOT NULL,
+    prix DECIMAL(10, 2) NOT NULL,
+    categorie VARCHAR(100),
+    stock INT DEFAULT 0,
+    date_creation DATETIME DEFAULT CURRENT_TIMESTAMP
+);
